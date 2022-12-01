@@ -2,13 +2,185 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./src/Media Assets/Logo/Favicon.png" />
+    <link rel="icon" type="image/x-icon" href="./src/Media Assets/Logo/Favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/index.css">
     <title>Map My Meals | Home </title>
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">Hello World</h1>
+  <body id="home">
+    <!--Navbar -->
+    <nav class="flex flex-col py-5 lg:flex-row justify-between lg:mx-10">
+      <div class="flex my-5 mx-5 justify-between">
+          <div class="w-40">
+              <a href="http://mapmymeals.in">
+              <img src="./src/Media Assets/Logo/Landscape full transparent.png" alt="Map My Meals">
+              </a>
+          </div>
+          <Button class="w-6 lg:hidden" id="menuButton"><img src="./src/Media Assets/Hamburger Menu.png" alt="Menu"></Button>
+      </div>        
+
+      <div class="flex flex-col mx-5 items-end max-lg:hidden lg:flex-row lg:justify-between lg:items-center lg:gap-x-16" id="menuItems">
+        <a href="#home" class="my-2">HOME</a>
+        <a href="#programs" class="my-2">PROGRAMS</a>
+        <a href="#pricing" class="my-2">PRICING</a>
+        <a href="#contact-us">
+          <button class="border-solid bg-lime-600 border-lime-600 border-2 px-4 py-1 rounded-md font-semibold text-white my-2 max-w-xs">BOOK APPOINTMENT</button>
+        </a>
+      </div>
+    </nav>
+    
+    <!-- Hero Section-->
+    <section id="Home" style="background-image: url('./src/Media Assets/BG-Image-Full-Size-webp.webp');" class="h-fit bg-cover">
+      <div class="flex flex-col items-center mx-5 py-20 lg:py-64 lg:mx-24">
+        <h1 class="font-sans text-3xl font-bold text-center text-white mt-5 lg:text-5xl">Your Journey Towards A Healthy Lifestyle Starts Here!</h1>
+        <p class="font-sans font-light text-center text-white mt-5 lg:px-16">At Map My Meals we focus on helping you make lifestyle changes that are healthy and sustainable so that you can achieve all your health goals permenantly</p>
+        <a href="#contact-us">
+          <Button class="border-solid bg-lime-600 border-lime-600 border-2 px-4 py-1 rounded-md font-semibold text-white max-w-xs my-10">SCHEDULE ASSESSMENT CALL</Button>
+        </a>
+      </div>
+    </section>
+
+    <!-- Program Section -->
+    <section id="programs" class="flex flex-col items-center py-10 px-5 lg:py-40">
+      <h2 class="text-center text-2xl py-5 font-bold text-lime-600">
+        PROGRAMS DESIGNED FOR YOUR NEEDS
+      </h2>
+      <div class="flex flex-col gap-5 items-center flex-wrap md:flex-row justify-center md:max-w-7xl">
+        <div class="flex flex-col bg-slate-100 p-5 rounded-lg m-2 shadow-lg max-w-xs lg:max-w-sm">
+          <img class="w-20" src="./src/Media Assets/Program Icons/Weight-Management.png" alt="Weight Management">
+          <h2 class="text-xl font-semibold">Weight Management</h2>
+          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div class="flex flex-col bg-slate-100 p-5 rounded-lg m-2 shadow-lg max-w-xs lg:max-w-sm">
+          <img class="w-16" src="./src/Media Assets/Program Icons/Diabetes Management.png" alt="Diabetes Reversal">
+          <h2 class="text-xl font-semibold">Diabetes Reversal</h2>
+          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div class="flex flex-col bg-slate-100 p-5 rounded-lg m-2 shadow-lg max-w-xs lg:max-w-sm">
+          <img class="w-16" src="./src/Media Assets/Program Icons/Health-Managment.png" alt="Health Management">
+          <h2 class="text-xl font-semibold">Health Management</h2>
+          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div class="flex flex-col bg-slate-100 p-5 rounded-lg m-2 shadow-lg max-w-xs lg:max-w-sm">
+          <img class="w-16" src="./src/Media Assets/Program Icons/PCOD Management.png" alt="PCOS Reversal">
+          <h2 class="text-xl font-semibold">PCOD Management</h2>
+          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div class="flex flex-col bg-slate-100 p-5 rounded-lg m-2 shadow-lg max-w-xs lg:max-w-sm">
+          <img class="w-16" src="./src/Media Assets/Program Icons/Pregnancy Management.png" alt="Pregnancy Management">
+          <h2 class="text-xl font-semibold">Pregnancy Management</h2>
+          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div class="flex flex-col bg-slate-100 p-5 rounded-lg m-2 shadow-lg max-w-xs lg:max-w-sm">
+          <img class="w-16" src="./src/Media Assets/Program Icons/Child Nutrition.png" alt="Child Nutrition">
+          <h2 class="text-xl font-semibold">Child Nutrition</h2>
+          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+    </section> 
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-10 px-5 lg:py-40 flex flex-col items-center">
+      <h2 class="text-center text-2xl font-bold text-lime-600">
+        SIMPLE & AFFORDABLE PRICING
+      </h2>
+
+      <div class="flex flex-col gap-5 pt-10 lg:max-w-6xl">
+        <div class="flex flex-col gap-5 justify-between md:flex-row">
+
+          <div class="flex flex-col justify-center bg-slate-100 p-5 rounded-lg m-2 shadow-lg">
+            <h3 class="text-2xl font-semibold text-center">₹5000</h3>
+            <h3 class="text-xl font-semibold text-center">One Month Program</h3>
+          </div>
+          
+          <div class="flex flex-col justify-center bg-slate-100 p-5 rounded-lg m-2 shadow-lg">
+            <h3 class="text-2xl font-semibold text-center">₹9000</h3>
+            <h3 class="text-xl font-semibold text-center">Two Month Program</h3>
+          </div>
+
+          <div class="flex flex-col justify-center bg-slate-100 p-5 rounded-lg m-2 shadow-lg">
+            <h3 class="text-2xl font-semibold text-center">₹12000</h3>
+            <h3 class="text-xl font-semibold text-center">Three Month Program</h3>
+          </div>
+        </div>
+
+        <div class=" bg-slate-100 p-5 rounded-lg m-2 shadow-lg">
+          <h3 class="text-xl font-semibold leading-relaxed">All Programs Include:</h3>
+          <p class="text-lg leading-relaxed">
+            - Weekly one on one consultations<br>
+            - Personalized Meal Plan Based<br>
+            - Personalized Exercise Plan<br>
+            - Meal Out Guides<br>
+            - Travel Guidelines<br>
+            - Health Check-up Recommendation<br>
+            - Healthy Recipe Ideas<br>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact-us" class="flex flex-col items-center py-10 px-5 lg:py-40">
+      <h2 class="text-2xl font-bold text-lime-600">
+        LET'S CONNECT
+      </h2>
+      <div class="py-5 flex flex-col max-w-md">
+        <p class="py-5 text-center">Want to know how we can help you achieve your health goals? Fill in the Form</p>
+        <form class="flex flex-col max-w-md" method="post" action="https://formsubmit.co/0ed81dd2ce81e076479c838c5c1649c7">
+          <label for="Name">Name:</label>
+          <input name="Name" type="text" required class="p-2 grow border-solid border border-slate-400 rounded"><br>
+
+          <label for="Email">Email:</label>
+          <input name="Email" type="email" required class="p-2 grow border-solid border border-slate-400 rounded"><br>
+
+          <label for="Phone">Phone:</label>
+          <input name="Phone" type="tel" required class="p-2 grow border-solid border border-slate-400 rounded"><br>
+
+          <label for="Message">Message:</label>
+          <textarea name="Message" required rows="5" cols="30" class="p-2 grow border-solid border border-slate-400 rounded"></textarea><br>
+
+          <input type="submit" value="SUBMIT" class="border-solid bg-lime-600 border-lime-600 border-1 px-10 py-1 rounded-md font-semibold text-white">
+        </form>
+      </div>
+    </section>
+
+
+
+    <footer class="bg-neutral-200 px-10 py-5 flex flex-col-reverse lg:flex-row justify-between items-center">
+      <p class="text-center">
+        Copyright © 2022 Nutricarte Mediventures LLP
+      </p>
+      <div class="flex flex-row gap-x-4 items-center">
+        <a class="w-8" href="tel:+919619790632">
+          <img src="./src/Media Assets/Contact Us Logo/Phone.png" alt="Phone">
+        </a>
+
+        <a class="w-8" href="mailto:nirali@mapmymeals.in">
+          <img src="./src/Media Assets/Contact Us Logo/Email.png" alt="Email">
+        </a>
+
+        <a class="w-8" href="https://goo.gl/maps/bvD14Mv4S34ACo2x7">
+          <img src="./src/Media Assets/Contact Us Logo/Location.png" alt="Office">
+        </a>
+
+        <a class="w-8" href="https://www.facebook.com/MapMyMealsByNirali">
+          <img src="./src/Media Assets/Contact Us Logo/Facebook.png" alt="Facebook">
+        </a>
+
+        <a class="w-8" href="https://www.instagram.com/mapmymealsbynirali/">
+          <img src="./src/Media Assets/Contact Us Logo/Instagram.png" alt="Instagram">
+        </a>
+
+        <a class="w-8 " href="https://www.youtube.com/@MapMyMeals">
+          <img src="./src/Media Assets/Contact Us Logo/YouTube.png" alt="Youtube">
+        </a>
+      </div>
+    </footer>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
